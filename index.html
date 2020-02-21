@@ -15,7 +15,7 @@
       <div class="card-body" id="cardbody">
         <form>
           <div class="row container-fluid" id="bill">
-            Bill
+            <div class="toplefttitle">Bill</div>
           </div>
           <div class="row container-fluid" id="billrow">
             <input type="number" id="totalbill" onkeyup="calculateBill()" value="0.00" />
@@ -41,13 +41,11 @@
             </div>
           </div>
         </form>
-        <div class="row container-fluid">
+        <div class="row container-fluid" style="height: 50px;">
           <div class="col-sm-6">
             <div class="row container-fluid">
               <h5>Tip</h5>
-            </div>
-            <div class="row container-fluid">
-              <p ><small id="perperson1">per person</small></p>
+              <div class="topleft"><small>per person</small></div>
             </div>
           </div>
           <div class="col-sm-6">
@@ -56,15 +54,11 @@
             </div>
           </div>
         </div>
-        <div class="row container-fluid">
+        <div class="row container-fluid" style="height: 50px;">
           <div class="col-sm-6">
             <div class="row container-fluid">
               <h5>Total</h5>
-              <br />
-              <p id="perperson2"><small>per person</small></p>
-            </div>
-            <div class="row container-fluid">
-              
+              <div class="topleft"><small>per person</small></div>
             </div>
           </div>
           <div class="col-sm-6">
@@ -74,7 +68,7 @@
           </div>
         </div>
         <div class="row container-fluid" id="amountrow">
-          <h4 id="farow">Full Amount</h4>
+          <h5 id="farow">Full Amount</h5>
         </div>
         <div class="row container-fluid">
           <h1 id="fullAmount">$</h1>

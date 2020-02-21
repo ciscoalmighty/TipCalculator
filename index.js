@@ -2,7 +2,7 @@ function increaseValuePercent() {
     var value = parseInt(document.getElementById('percentNumber').value, 10);
     value = isNaN(value) ? 0 : value;
     value+=5;
-    document.getElementById('percentNumber').value = value +"%";
+    document.getElementById('percentNumber').value = value;
     calculateBill();
   }
   
@@ -11,7 +11,7 @@ function increaseValuePercent() {
     value = isNaN(value) ? 0 : value;
     value < 1 ? value = 1 : '';
     value-=5;
-    document.getElementById('percentNumber').value = value + "%";
+    document.getElementById('percentNumber').value = value;
     calculateBill();
   }
   function increaseValue() {
@@ -59,3 +59,4 @@ function calculateBill(){
     totalPerPerson();
     totalBill();
 }
+

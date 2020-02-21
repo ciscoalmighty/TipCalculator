@@ -73,7 +73,8 @@ input#totalbill {
   display: block;
   text-align: center;
   border: 1px solid #ddd;
-  margin: 10px;
+  margin-top: 5px;
+  margin: 18px;
   width: 100%;
 }
 
@@ -137,4 +138,16 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+.topleft {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-size: 18px;
+}
+.toplefttitle {
+  position: absolute;
+  top: 45px;
+  left: 16px;
+  font-size: 18px;
 }
