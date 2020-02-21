@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <title>Tip Calc</title>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="cardcontainer">
+      <div class="card" id="card">
+        <div class="card-header" id="cardheader">
+          Tip Calculator
+        </div>
+        <div class="card-body" id="cardbody">
+          <form>
+            <div class="row container-fluid" style="margin:0 0 0 10;">Bill</div>
+            <div class="row container-fluid" id="billrow">
+              <input
+                type="number"
+                id="totalbill"
+                onkeyup="calculateBill()"
+                value="0.00"
+              />
+            </div>
+            <div class="row container-fluid">Tip %</div>
+            <div class="row container-fluid" id="tiprow">
+              <div
+                class="value-button"
+                id="decreasepercent"
+                onclick="decreaseValuePercent()"
+                value="Decrease Value"
+              >
+                -
+              </div>
+              <input type="number" id="percentNumber" value="10" />
+              <div
+                class="value-button"
+                id="increasepercent"
+                onclick="increaseValuePercent()"
+                value="Increase Value"
+              >
+                +
+              </div>
+            </div>
+            <div class="row container-fluid">Number of People</div>
+            <div class="row container-fluid" id="peoplerow">
+              <div
+                class="value-button"
+                id="decrease"
+                onclick="decreaseValue()"
+                value="Decrease Value"
+              >
+                -
+              </div>
+              <input type="number" id="number" value="1" />
+              <div
+                class="value-button"
+                id="increase"
+                onclick="increaseValue()"
+                value="Increase Value"
+              >
+                +
+              </div>
+            </div>
+          </form>
+          <div class="row container-fluid">
+            <div class="col-sm-6">
+              <div class="row container-fluid">
+                <h5>Tip</h5>
+              </div>
+              <div class="row container-fluid">
+                <p>per person</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row container-fluid" >
+                  <h4 id="tipPerPerson"></h4>
+              </div>
+            </div>
+          </div>
+          <div class="row container-fluid">
+            <div class="col-sm-6">
+              <div class="row container-fluid">
+                <h5>Total</h5>
+              </div>
+              <div class="row container-fluid">
+                <p>
+                  per person
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row container-fluid" >
+                  <h4 id="totalPerPerson"></h4>
+              </div>
+            </div>
+          </div>
+          <div class="row container-fluid" id="amountrow">
+            <h4 id="farow">Full Amount</h4>
+          </div>
+          <div class="row container-fluid">
+            <h2 id="fullAmount">$</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

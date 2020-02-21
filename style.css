@@ -1,0 +1,115 @@
+form {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 25px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increasepercent {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #decreasepercent {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 75%;
+}
+
+input#percentNumber {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 75%;
+}
+input#totalbill {
+  display: block;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 10px;
+  width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#card{
+  width: 275px;
+}
+#cardheader{
+  color: white;
+  background: blue;
+  text-align: center;
+}
+#cardbody{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+#billrow{
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+#tiprow{
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  margin-left: 15px;
+}
+#peoplerow{
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  margin-left: 15px;
+}
